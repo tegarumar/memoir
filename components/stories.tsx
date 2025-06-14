@@ -1,0 +1,239 @@
+"use client";
+
+import { useState } from "react";
+import { ChevronRight, Globe } from "lucide-react";
+
+const stories = [
+  {
+    id: 1,
+    title: {
+      en: "Maximize Assets, Avoid Inflation",
+      id: "Maksimalkan Aset, Hindari Inflasi",
+    },
+    excerpt: {
+      en: "In my opinion, one of the best ways to stabilize asset value and protect money from inflation is by...",
+      id: "Menurut saya, salah satu cara terbaik untuk menstabilkan nilai aset dan melindungi uang dari inflasi adalah...",
+    },
+    content: {
+      en: `In my opinion, one of the best ways to stabilize asset value and protect money from inflation is by purchasing gold. Historically, gold prices tend to rise every year, making it an excellent choice for preserving the value of passive, unused assets. On the other hand, keeping money in a bank can result in its value decreasing due to inflation. <br /><br />
+What about investing in stocks or cryptocurrencies? In my view, before starting to invest in these instruments, there are several important steps to complete. The first step is to ensure that daily necessities and urgent desires are fulfilled. Next, move to the second step, which is saving and setting aside an emergency fund for unexpected needs. The third step is preparing a minimum investment capital, for instance, IDR 50 million. Once these three steps are met, we can consider investing in stocks or cryptocurrencies.<br /><br />
+Stocks are more suitable for long-term investments, especially if you have substantial capital, as they tend to provide more stable returns over time. On the other hand, cryptocurrency is more appropriate for short-term investments or trading due to its high volatility, which requires in-depth understanding and proper risk management.<br /><br />
+However, if you find it difficult to fulfill these three steps, I recommend investing in yourself first. This investment could take the form of education, courses, or training to enhance your skills. With new skills, you can open greater opportunities to increase asset value in a more measurable and sustainable way.`,
+      id: `Menurut saya, salah satu cara terbaik untuk menstabilkan nilai aset dan melindungi uang dari inflasi adalah dengan membeli emas. Jika kita melihat data historis, harga emas cenderung naik setiap tahun, sehingga sangat cocok digunakan untuk menjaga nilai aset pasif yang tidak terpakai. Sebaliknya, menyimpan uang di bank bisa menyebabkan nilainya berkurang karena tergerus inflasi. <br /><br />
+Bagaimana dengan investasi di saham atau cryptocurrency? Menurut saya, sebelum memulai investasi di dua instrumen tersebut, ada beberapa langkah penting yang perlu dipenuhi. Langkah pertama adalah memastikan kebutuhan sehari-hari dan keinginan mendesak sudah terpenuhi. Setelah itu, masuk ke langkah kedua, yaitu menabung dan menyisihkan dana darurat untuk keperluan tak terduga. Langkah ketiga adalah mempersiapkan modal investasi minimal, misalnya Rp50 juta. Jika ketiga langkah tersebut sudah terpenuhi, barulah kita bisa mempertimbangkan investasi saham atau cryptocurrency.<br /><br />
+Saham lebih cocok untuk investasi jangka panjang, terutama jika anda memiliki modal yang cukup besar, karena hasilnya cenderung lebih stabil dalam jangka waktu yang lama. Di sisi lain, cryptocurrency lebih cocok untuk investasi jangka pendek atau trading karena volatilitasnya yang tinggi, sehingga membutuhkan pemahaman mendalam dan manajemen risiko yang baik.<br /><br />
+Namun, jika anda kesulitan memenuhi tiga langkah tersebut, saya sarankan untuk berinvestasi pada diri sendiri terlebih dahulu. Investasi ini bisa berupa pendidikan, kursus, atau pelatihan untuk meningkatkan keterampilan anda. Dengan keterampilan tersebut, anda dapat membuka peluang lebih besar untuk meningkatkan nilai aset atau income anda dengan cara yang lebih terukur dan berkelanjutan.`,
+    },
+  },
+  {
+    id: 2,
+    title: {
+      en: "Energy Is Too Expensive for a Bad Investments",
+      id: "Energi Terlalu Berharga untuk Diinvestasikan pada Hal yang Salah",
+    },
+    excerpt: {
+      en: "Energy is one of the most valuable assets everyone possesses, surpassing money or time, because...",
+      id: "Energi adalah salah satu aset paling berharga yang semua orang miliki, lebih dari uang atau waktu, karena...",
+    },
+    content: {
+      en: `Energy is one of the most valuable assets everyone possesses, surpassing money or time, because it encompasses various aspects such as physical, mental, emotional, and spiritual dimensions. As a finite resource, energy must be managed and utilized wisely, directed toward activities that add value to life. Using it on aimless conflicts, toxic relationships, or meaningless activities becomes a bad investment that only harms oneself. <br/><br/>
+Like money, energy should be strategically allocated to gain maximum benefits, such as learning new skills, maintaining health, or building positive relationships. To avoid unnecessary energy consumption, it is important to steer clear of futile efforts, such as trying to please everyone or dwelling on past regrets. Instead, focus on priorities that support personal growth and long-term goals. Sometimes, conserving energy through rest or quiet reflection is the best approach. When energy is channeled positively to create something meaningful or to help others, the results often exceed expectations and attract more good into life. Therefore, do not waste your energy on things that do not bring value; use it wisely as the best investment for a better future.`,
+      id: `Energi adalah salah satu aset paling berharga yang semua orang miliki, lebih dari uang atau waktu, karena energi mencakup beberapa hal seperti fisik, mental, emosional, dan spiritual. Sebagai sumber daya yang terbatas, energi perlu dikelola dan dimanfaatkan dengan bijaksana dan diarahkan pada hal-hal yang memberikan nilai tambah dalam hidup. Menggunakannya untuk konflik tanpa arah, hubungan yang toxic, atau aktivitas yang tidak bermakna hanya akan menjadi investasi buruk yang merugikan diri sendiri. <br /><br />
+Sama seperti uang, energi harus dialokasikan secara strategis untuk mendapatkan manfaat maksimal, seperti belajar keterampilan atau hal baru, menjaga kesehatan, atau membangun hubungan positif. Untuk menghindari pemakaian energi yang tidak perlu, penting untuk menjauhkan diri dari upaya yang sia-sia, seperti mencoba menyenangkan semua orang atau terjebak pada penyesalan masa lalu. Sebaliknya, fokuslah pada prioritas yang mendukung pertumbuhan pribadi dan tujuan jangka panjang. Kadang, menyimpan energi melalui istirahat atau keheningan adalah langkah terbaik. Ketika energi digunakan secara positif untuk menciptakan sesuatu yang bermakna atau membantu orang lain, hasilnya sering kali melampaui ekspektasi dan menarik lebih banyak hal baik dalam hidup. Maka, jangan menyia-nyiakan energi pada hal-hal yang tidak membawa manfaat, gunakanlah secara bijak sebagai investasi terbaik untuk masa depan yang lebih baik.`,
+    },
+  },
+  {
+    id: 3,
+    title: {
+      en: "Networking is a Crucial Aspect of Building a Career",
+      id: "Networking adalah Aspek Krusial dalam Membangun Karir",
+    },
+    excerpt: {
+      en: "Networking is one of the most crucial aspects of building a career. More than just exchanging names or connections...",
+      id: "Networking adalah salah satu aspek krusial dalam membangun sebuah karir. Lebih dari sekadar bertukar nama atau koneksi...",
+    },
+    content: {
+      en: `Networking is one of the most crucial aspects of building a career. More than just exchanging names or connections on social media, networking is about creating meaningful relationships with people who can provide insights, opportunities, or even inspiration. In a competitive professional world, a strong network can open doors that might not be accessible through technical skills alone. Through networking, we can learn from others' experiences, gain information about industry trends, or even find mentors who help us reach our maximum potential in our chosen field. Therefore, investing time and energy in building and maintaining professional relationships not only enhances career opportunities but also enriches our knowledge. Networking is truly a form of long-term investment.`,
+      id: `Networking adalah salah satu aspek krusial dalam membangun sebuah karir. Lebih dari sekadar bertukar nama atau koneksi di media sosial, networking adalah tentang menciptakan hubungan bermakna dengan orang-orang yang dapat memberikan wawasan, peluang, atau bahkan inspirasi. Dalam dunia kerja yang kompetitif, jaringan yang baik dapat membuka pintu yang mungkin tidak bisa diakses hanya dengan keterampilan teknis. Melalui networking, kita dapat belajar dari pengalaman orang lain, mendapatkan informasi tentang tren industri, atau bahkan menemukan mentor yang membantu kita mencapai potensi maksimal dibidang yang sedang kita geluti. Oleh karena itu, investasi waktu dan energi untuk membangun serta menjaga hubungan profesional tidak hanya meningkatkan peluang karir, tetapi juga memperkaya ilmu. Networking adalah salah satu bentuk investasi jangka panjang.`,
+    },
+  },
+  {
+    id: 4,
+    title: {
+      en: "Would AI Replace Your Job?",
+      id: "Apakah AI Akan Menggantikan Pekerjaanmu?",
+    },
+    excerpt: {
+      en: "AI is a powerful technology that has been developing rapidly. Today, AI provides numerous benefits to humans, especially as a...",
+      id: "AI adalah teknologi yang sangat powerful dan berkembang dengan pesat. Saat ini, AI telah memberikan banyak manfaat bagi manusia, terutama sebagai...",
+    },
+    content: {
+      en: `AI is a powerful technology that has been developing rapidly. Today, AI provides numerous benefits to humans, especially as a "tool" to enhance productivity. One of the most common advantages of AI is its ability to serve as a reference, assist in decision-making, and improve efficiency in tasks such as summarizing documents, and so on. <br /><br />
+However, alongside these immense benefits, there is growing concern that AI might replace human jobs. In my opinion, AI indeed has significant potential to take over certain types of work, especially tasks that are precise, repetitive, or routine. Examples include data entry, assembly-line manufacturing, or document management. Moreover, AI can also replace jobs requiring basic analysis and standard interactions, such as Customer Service or Virtual Assistants.<br /><br />
+
+On the other hand, there are types of jobs that, in my view, will be challenging for AI to replace in the near future. These jobs often involve uncertain sciences, creativity, or serendipity, such as scientific research. Jobs requiring advanced technical skills and dynamic physical contexts—like tasks that engage the senses (touch, smell, hearing)—are also hard to substitute. Additionally, jobs that demand genuine empathy or emotional intelligence (EQ), such as teaching, psychology/therapy, and roles involving values, ethics, and complex subjective considerations, are likely to remain within the human domain.<br /><br />
+
+As a Software Engineer, I also share this concern. There’s a story about someone who worked remotely from Indonesia for an American company. His role was in IT Security, responsible for maintaining system security. Unfortunately, he was laid off—not due to poor performance or being replaced by another person—but because his position was taken over by AI.<br /><br />
+
+My hypothesis is that perhaps the cost of AI is more worthwhile than human labor. However, in Indonesia, AI might still be too expensive and not as intense as in America. Simply put, labor costs in Indonesia are cheaper than the cost of AI. Moreover, AI investment in Indonesia is still half-hearted. <br/>
+
+It could also be because the company is a business entity not based in Indonesia. On that note, if the contract is not clear enough, freelancing across countries carries significant legal protection risks, which might be why they were laid off.
+<br /><br />
+Suppose AI were to replace your job. What would you do? Lower your price as much as possible so the company chooses you instead of AI? Or transition to a field that AI cannot easily replace?
+<br /><br />
+If you were a product, what would you do? Fit the market? Or continue to pursue your passion, even if it’s more challenging?
+
+The world needs more listeners. Be one of them.`,
+      id: `AI adalah teknologi yang sangat powerful dan berkembang dengan pesat. Saat ini, AI telah memberikan banyak manfaat bagi manusia, terutama sebagai "tools" yang membantu meningkatkan produktivitas. Salah satu manfaat paling umum dari AI adalah memberikan referensi, membantu dalam pengambilan keputusan, serta meningkatkan efisiensi, seperti dalam hal menyusun ringkasan (summarize) sebuah dokumen, dan sebagainya.<br /><br />
+Dari banyaknya manfaat yang AI berikan, muncul keresahan bahwa teknologi ini dapat menggantikan pekerjaan manusia. Menurut saya, AI memang memiliki potensi besar untuk mengambil alih beberapa jenis pekerjaan, adapun jenis tugas atau pekerjaan yang potensial digantikan menurut saya seperti Ilmu pasti, pekerjaan yang berulang atau rutin misalnya seperti entri data, manufaktur berbasis assembly line, atau pengelolaan dokumen, lalu juga AI bisa menggantikan pekerjaan yang basisnya analisis sederhana, dan interaksi standard seperti Customer Service atau Virtual Assistant.<br /><br />
+Di sisi lain, ada pula jenis pekerjaan yang, menurut saya, sulit digantikan oleh AI dalam waktu dekat. Pekerjaan ini biasanya melibatkan ilmu yang tidak pasti, 
+kreativitas, atau serendipity, seperti penelitian ilmiah. Teknis tinggi dan konteks fisik yang dinamis misalnya pekerjaan yang harus melibatkan indera (meraba, mencium, mendegar), lalu juga empati yang tulus atau kecerdasan emosional EQ seperti guru, psikolog/terapis dan pekerjaan yang melibatkan nilai, etika & pertimbangan subjektif yang kompleks, kemungkinan besar akan tetap menjadi domain manusia.<br /><br /> Saya saat ini sebagai Software Engineer  juga merasakan keresahan yang sama, ada salah satu cerita dimana seseorang bekerja di perusahaan Amerika dan terkena layoff, kerjanya remote dari Indonesia, tentu gajinya cukup besar karena dibayar dalam bentuk USD. Pekerjaannya di bidang IT Security, yang bertugas menjaga keamanan sistem. Sayangnya, ia terkena layoff, bukan karena performanya buruk atau digantikan oleh orang lain, tetapi karena posisinya diambil alih oleh AI. <br /><br /> Hipotesis saya, mungkin karena costnya lebih worth it an AI daripada Manusia terlepas dari sementara itu di Indonesia mungkin AI masih terlalu mahal, dan belum se-intense di Amerika, kasarnya tenaga kerja di Indonesia lebih murah dari cost AI, toh juga di indonesia AI Investment masih setengah-setengah. <br />Atau mungkin juga karena perusahaan yang entitas bisnisnya bukan di Indonesia. On that notes, jika kontraknya tidak cukup jelas, freelancing beda negara cukup berisiko secara perlindungan hukum, makannya dari itu ia terkena layoff.<br /><br /> Anggaplah AI akan menggantikan pekerjaanmu. Apa yang akan kamu lakukan? Menurunkan harga jasamu serendah mungkin agar perusahaan tetap memilihmu dibanding AI? Atau, bertransisi ke jenis pekerjaan yang sulit digantikan oleh AI?
+
+<br /><br /> Jika kamu adalah sebuah produk, apa yang akan kamu lakukan? Menyesuaikan diri agar sesuai dengan kebutuhan pasar? Atau tetap mengikuti passion meskipun itu akan sulit?`,
+    },
+  },
+  {
+    id: 5,
+    title: {
+      en: "Love's make everything possible",
+      id: "Cinta membuat segalanya menjadi mungkin",
+    },
+    excerpt: {
+      en: "Love is like passive fuel, yet it holds an extraordinary power to make anything possible...",
+      id: "Cinta itu seperti bahan bakar pasif, namun memiliki kekuatan luar biasa untuk membuat segala hal menjadi mungkin...",
+    },
+    content: {
+      en: `Love is like passive fuel, yet it holds an extraordinary power to make anything possible. It’s not just about romantic relationships, but also about loving the passion behind what we do. When we work, learn, or pursue something wholeheartedly, love flows into the results. Every task feels lighter, every obstacle becomes a lesson, and every achievement feels more meaningful. Love for the work or activities we do, when rooted in sincerity, will undoubtedly bear sweet fruit in the end. <br/><br/>
+
+However, love in the context of relationships is no less impactful. I once observed a friend of mine who was in love. Their face seemed brighter, filled with happiness. The burdens of life appeared to lift away, leaving them more at peace—even their quality of sleep improved. It made me reflect on how profoundly love can influence our daily lives. <br/><br/>
+
+When it comes to relationships, don’t be like me—someone who failed because of their own mistakes. I spent more than half a decade mourning the loss, replaying every moment, and wondering what I could have done to make things right. In that emptiness, I realized that love is not just about feeling—it’s about learning to take responsibility, to understand, and to strive. I hope to have a chance to fix everything. No matter how long it takes, I'll wait.<br/><br/>
+
+Love is simple yet magical. It transforms pressure into motivation, sadness into strength, and routines into stories full of meaning. When love is present—whether in work or relationships—we become the best version of ourselves, ready to face the world with greater joy and hope. Even though the path isn’t always smooth, love teaches us that the journey itself is part of the magic.`,
+      id: `Cinta itu seperti bahan bakar pasif, namun memiliki kekuatan luar biasa untuk membuat segala hal menjadi mungkin. Bukan hanya tentang hubungan romantis, tetapi juga mencintai passion yang kita lakukan. Ketika bekerja, belajar, atau menjalani sesuatu dengan sepenuh hati, cinta tersebut mengalir ke dalam hasilnya. Setiap tugas terasa lebih ringan, setiap hambatan menjadi pelajaran, dan setiap pencapaian terasa lebih bermakna. Cinta pada pekerjaan atau kegiatan yang kita lakukan, jika dilandasi ketulusan, pasti akan berbuah manis pada akhirnya. <br/><br/>
+
+    Namun, cinta dalam artian hubungan juga tak kalah berpengaruh. Saya pernah melihat teman saya yang sedang jatuh cinta. Wajahnya terlihat lebih cerah, penuh dengan kebahagiaan. Beban hidupnya seakan terangkat, dan ia menjadi lebih damai, bahkan kualitas tidurnya menjadi lebih baik. Hal itu membuat saya berpikir, betapa besar dampak cinta terhadap keseharian kita. <br/><br/>
+
+    Untuk dalam sebuah hubungan, jangan seperti diriku, yang gagal karena kesalahan sendiri. Lebih dari setengah dekade ku habiskan untuk meratapi kehilangan, memutar ulang setiap momen dan bertanya-tanya apa yang bisa kulakukan agar bisa membuatnya kembali seperti semula. Dalam kekosongan itu, aku menyadari bahwa cinta bukan hanya tentang merasakan, tetapi juga tentang belajar bertanggung jawab, memahami, dan berusaha. Aku berharap memiliki kesempatan untuk memperbaiki semuanya. Selama apa pun waktu yang dibutuhkan, akan kutunggu. <br/><br/>
+
+    Cinta itu sederhana namun ajaib. Ia mengubah tekanan menjadi dorongan, kesedihan menjadi kekuatan, dan rutinitas menjadi cerita penuh makna. Ketika cinta hadir, baik dalam pekerjaan maupun hubungan, kita menjadi versi terbaik dari diri kita sendiri, siap menghadapi dunia dengan lebih ceria dan penuh harapan. Meski jalannya tak selalu mulus, cinta mengajarkan kita bahwa perjalanan itu sendiri adalah bagian dari keajaiban.`,
+    },
+  },
+];
+
+export default function Stories() {
+  const [expandedStory, setExpandedStory] = useState<number | null>(null);
+  const [storyLanguages, setStoryLanguages] = useState<{
+    [key: number]: "en" | "id";
+  }>({});
+
+  const toggleStory = (id: number) => {
+    setExpandedStory(expandedStory === id ? null : id);
+  };
+
+  const toggleLanguage = (storyId: number) => {
+    setStoryLanguages((prev) => ({
+      ...prev,
+      [storyId]: prev[storyId] === "id" ? "en" : "id",
+    }));
+  };
+
+  const getCurrentLanguage = (storyId: number): "en" | "id" => {
+    return storyLanguages[storyId] || "en";
+  };
+
+  return (
+    <section className="py-16 lg:px-8">
+      <div className="container mx-auto max-w-4xl">
+        {/* <h2 className="text-3xl font-light mb-12 text-center">Yapping</h2> */}
+        <div className="space-y-8">
+          {stories.map((story) => {
+            const currentLang = getCurrentLanguage(story.id);
+            return (
+              <article
+                key={story.id}
+                className="bg-card border border-border rounded-lg px-6 pb-8 pt-4 shadow-sm hover:shadow-md dark:shadow-white/5 dark:hover:shadow-white/10 transition-all duration-300"
+              >
+                <div className="flex items-start justify-end mb-5">
+                  <div className="flex items-center gap-2">
+                    <Globe className="h-4 w-4 text-muted-foreground" />
+                    <button
+                      onClick={() => toggleLanguage(story.id)}
+                      className="flex items-center gap-2 px-3 py-1 rounded-full bg-muted hover:bg-muted/80 transition-colors duration-200 text-sm"
+                    >
+                      <span
+                        className={`transition-opacity ${
+                          currentLang === "en"
+                            ? "opacity-100 font-medium"
+                            : "opacity-60"
+                        }`}
+                      >
+                        EN
+                      </span>
+                      <div className="w-8 h-4 bg-border dark:bg-black rounded-full relative">
+                        <div
+                          className={`absolute top-0.5 w-3 h-3 bg-foreground rounded-full transition-transform duration-200 ${
+                            currentLang === "id"
+                              ? "translate-x-4"
+                              : "translate-x-0.5"
+                          }`}
+                        />
+                      </div>
+                      <span
+                        className={`transition-opacity ${
+                          currentLang === "id"
+                            ? "opacity-100 font-medium"
+                            : "opacity-60"
+                        }`}
+                      >
+                        ID
+                      </span>
+                    </button>
+                  </div>
+                </div>
+
+                <h3 className="text-2xl font-normal mb-4 leading-tight">
+                  {story.title[currentLang]}
+                </h3>
+
+                <div className="prose prose-gray dark:prose-invert max-w-none">
+                  <p
+                    className="text-muted-foreground leading-relaxed mb-6"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        expandedStory === story.id
+                          ? story.content[currentLang]
+                          : story.excerpt[currentLang],
+                    }}
+                  ></p>
+                </div>
+
+                <button
+                  onClick={() => toggleStory(story.id)}
+                  className="inline-flex items-center text-foreground hover:text-muted-foreground transition-colors duration-200 group"
+                >
+                  <span className="font-medium">
+                    {expandedStory === story.id
+                      ? currentLang === "en"
+                        ? "Show Less"
+                        : "Tampilkan Lebih Sedikit"
+                      : currentLang === "en"
+                      ? "Read More"
+                      : "Baca Selengkapnya"}
+                  </span>
+                  <ChevronRight
+                    className={`ml-1 h-4 w-4 transition-transform duration-200 ${
+                      expandedStory === story.id
+                        ? "rotate-90"
+                        : "group-hover:translate-x-1"
+                    }`}
+                  />
+                </button>
+              </article>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
