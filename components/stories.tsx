@@ -26,6 +26,37 @@ Namun, jika anda kesulitan memenuhi tiga langkah tersebut, saya sarankan untuk b
     },
   },
   {
+    id: 6,
+    title: {
+      en: "Public Speaking is a Powerful Skill",
+      id: "Public Speaking adalah Keterampilan yang Kuat",
+    },
+    excerpt: {
+      en: "In the company where I work, there’s one figure who always stands out—our CEO. He isn’t a graduate...",
+      id: "Di perusahaan tempat saya bekerja, ada satu sosok yang selalu menarik perhatian saya—CEO kami. Beliau bukanlah lulusan...",
+    },
+    content: {
+      en: `In the company where I work, there’s one figure who always stands out—our CEO. He isn’t a graduate of a prestigious university, just a vocational school alumnus. Yet, what makes him remarkable is his outstanding public speaking skills.
+<br/><br/>
+When he speaks to the team or during major meetings, there’s something about the way he delivers ideas that captures everyone’s attention. His words are simple yet always on point. Through effective public speaking, he has been able to convince key stakeholders, build strong relationships, and open opportunities—even at the government and ministerial levels.
+<br/><br/>
+He often shares that his public speaking ability is something he developed intentionally. “You don’t need to be an expert at everything,” he once said, “but if you can communicate effectively, you can build trust, convey your ideas clearly, and open many doors.”
+<br/><br/>
+His story makes me reflect. Public speaking isn’t just about talking, it’s about confidently delivering a message, building connections, and influencing others. It’s not a skill everyone possesses, but as our CEO has shown, it’s something you can learn.
+<br/><br/>
+For me, public speaking is one of the skills I aspire to master. Watching how our CEO uses this ability to drive the company forward is a great source of inspiration. It reminds me that, in many cases, words delivered effectively can be the most powerful tool to achieve success.`,
+      id: `Di perusahaan tempat saya bekerja, ada satu sosok yang selalu menarik perhatian saya—CEO kami. Beliau bukanlah lulusan universitas ternama, hanya seorang lulusan SMK. Namun, yang membuatnya istimewa adalah kemampuan public speaking-nya yang luar biasa.
+<br/><br/>
+Ketika beliau berbicara di depan tim atau dalam rapat besar, ada sesuatu dalam cara beliau menyampaikan ide yang membuat semua orang mendengarkan. Bahasanya sederhana, tetapi selalu tepat sasaran. Dengan public speaking yang baik, beliau mampu meyakinkan banyak pihak, membangun hubungan yang kuat, dan membuka peluang kerja sama, bahkan hingga ke level pemerintahan dan kementerian.
+<br/><br/>
+Beliau sering berbagi cerita bahwa kemampuan berbicara di depan umum adalah keterampilan yang ia pelajari dengan penuh kesadaran. “Kamu tidak perlu pintar dalam segala hal,” katanya suatu hari, “Tapi kalau kamu bisa berbicara dengan baik, kamu bisa membangun kepercayaan, menyampaikan ide dengan jelas, dan itu membuka banyak pintu.”
+<br/><br/>
+Cerita beliau membuat saya berpikir. Public speaking ternyata bukan hanya tentang berbicara, tetapi juga tentang menyampaikan pesan dengan percaya diri, membangun hubungan, dan memengaruhi orang lain. Ini bukan kemampuan yang dimiliki semua orang, tetapi saya percaya, seperti yang CEO kami tunjukkan, itu adalah keterampilan yang bisa dipelajari.
+<br/><br/>
+Bagi saya, public speaking adalah salah satu keterampilan yang ingin saya kuasai. Melihat bagaimana CEO kami memanfaatkan kemampuan ini untuk membawa perusahaan maju adalah inspirasi besar. Ini mengingatkan saya bahwa dalam banyak hal, kata-kata yang disampaikan dengan baik dapat menjadi alat yang paling kuat untuk meraih kesuksesan.`,
+    },
+  },
+  {
     id: 2,
     title: {
       en: "Energy Is Too Expensive for a Bad Investments",
@@ -37,9 +68,40 @@ Namun, jika anda kesulitan memenuhi tiga langkah tersebut, saya sarankan untuk b
     },
     content: {
       en: `Energy is one of the most valuable assets everyone possesses, surpassing money or time, because it encompasses various aspects such as physical, mental, emotional, and spiritual dimensions. As a finite resource, energy must be managed and utilized wisely, directed toward activities that add value to life. Using it on aimless conflicts, toxic relationships, or meaningless activities becomes a bad investment that only harms oneself. <br/><br/>
-Like money, energy should be strategically allocated to gain maximum benefits, such as learning new skills, maintaining health, or building positive relationships. To avoid unnecessary energy consumption, it is important to steer clear of futile efforts, such as trying to please everyone or dwelling on past regrets. Instead, focus on priorities that support personal growth and long-term goals. Sometimes, conserving energy through rest or quiet reflection is the best approach. When energy is channeled positively to create something meaningful or to help others, the results often exceed expectations and attract more good into life. Therefore, do not waste your energy on things that do not bring value; use it wisely as the best investment for a better future.`,
+Like money, energy should be strategically allocated to gain maximum benefits, such as learning new skills, maintaining health, or building positive relationships. To avoid unnecessary energy consumption, it is important to steer clear of futile efforts, such as trying to please everyone or dwelling on past regrets. Instead, focus on priorities that support personal growth and long-term goals. Sometimes, conserving energy through rest or quiet reflection is the best approach. When energy is channeled positively to create something meaningful or to help others, the results often exceed expectations and attract more good into life. Therefore, do not waste your energy on things that do not bring value, use it wisely as the best investment for a better future.`,
       id: `Energi adalah salah satu aset paling berharga yang semua orang miliki, lebih dari uang atau waktu, karena energi mencakup beberapa hal seperti fisik, mental, emosional, dan spiritual. Sebagai sumber daya yang terbatas, energi perlu dikelola dan dimanfaatkan dengan bijaksana dan diarahkan pada hal-hal yang memberikan nilai tambah dalam hidup. Menggunakannya untuk konflik tanpa arah, hubungan yang toxic, atau aktivitas yang tidak bermakna hanya akan menjadi investasi buruk yang merugikan diri sendiri. <br /><br />
 Sama seperti uang, energi harus dialokasikan secara strategis untuk mendapatkan manfaat maksimal, seperti belajar keterampilan atau hal baru, menjaga kesehatan, atau membangun hubungan positif. Untuk menghindari pemakaian energi yang tidak perlu, penting untuk menjauhkan diri dari upaya yang sia-sia, seperti mencoba menyenangkan semua orang atau terjebak pada penyesalan masa lalu. Sebaliknya, fokuslah pada prioritas yang mendukung pertumbuhan pribadi dan tujuan jangka panjang. Kadang, menyimpan energi melalui istirahat atau keheningan adalah langkah terbaik. Ketika energi digunakan secara positif untuk menciptakan sesuatu yang bermakna atau membantu orang lain, hasilnya sering kali melampaui ekspektasi dan menarik lebih banyak hal baik dalam hidup. Maka, jangan menyia-nyiakan energi pada hal-hal yang tidak membawa manfaat, gunakanlah secara bijak sebagai investasi terbaik untuk masa depan yang lebih baik.`,
+    },
+  },
+  {
+    id: 7,
+    title: {
+      en: "The Best Way to Learn",
+      id: "Cara Terbaik untuk Belajar",
+    },
+    excerpt: {
+      en: "Learning is a lifelong process, and everyone has their own approach to gaining knowledge. In my opinion...",
+      id: "Belajar adalah proses yang tidak pernah berhenti, dan setiap orang memiliki caranya sendiri untuk menyerap ilmu. Namun, menurut saya...",
+    },
+    content: {
+      en: `Learning is a lifelong process, and everyone has their own approach to gaining knowledge. In my opinion, there are three best ways to learn that can be applied in different situations.
+<br /><br />
+First, learn whenever curiosity strikes. When you encounter something intriguing or unfamiliar, even if it’s outside your field, don’t hesitate to explore it. Curiosity is the gateway to knowledge. Exploring new things beyond your comfort zone can expand your horizons and provide richer perspectives.
+<br /><br />
+Second, learn from things you love or are passionate about. When you’re passionate about something, you’ll happily spend time delving into it without feeling forced. Learning through passion is not only enjoyable but also helps you achieve a deeper understanding because of your strong intrinsic motivation.
+<br /><br />
+Third, learn the things you need, even if you don’t particularly like them. Not everything we need to learn is exciting, but it’s often essential to achieve long-term goals. For instance, school or college subjects that may seem dull can become crucial foundations for your future career or life. Developing the discipline to learn what’s necessary teaches perseverance and responsibility.
+<br /><br />
+By combining curiosity, passion, and necessity, you can create a balanced and effective learning approach. Each of these methods plays a unique role, and applying them can make learning a more meaningful journey.`,
+      id: `Belajar adalah proses yang tidak pernah berhenti, dan setiap orang memiliki caranya sendiri untuk menyerap ilmu. Namun, menurut saya, ada tiga cara terbaik untuk belajar yang bisa diterapkan dalam berbagai situasi.
+<br /><br />
+Pertama, belajarlah ketika rasa penasaran muncul. Saat kamu menemukan sesuatu yang menarik atau tidak kamu mengerti, meskipun itu di luar bidangmu, jangan ragu untuk mengeksplorasi. Rasa ingin tahu adalah pintu pertama menuju pengetahuan. Mempelajari hal-hal baru di luar zona nyaman bisa memperluas wawasan dan memberikan perspektif yang lebih kaya.
+<br /><br />
+Kedua, belajarlah dari hal-hal yang kamu sukai atau yang kamu passion tentangnya. Ketika kamu mencintai sesuatu, kamu akan dengan senang hati menghabiskan waktu mendalaminya tanpa merasa terpaksa. Belajar melalui passion tidak hanya menyenangkan, tetapi juga membantu kamu mencapai tingkat pemahaman yang lebih dalam karena motivasi intrinsik yang kuat.
+<br /><br />
+Ketiga, belajarlah hal-hal yang kamu perlukan, bahkan jika kamu tidak menyukainya. Tidak semua yang perlu dipelajari itu menarik, tapi sering kali penting untuk menunjang tujuan jangka panjangmu. Contohnya, pelajaran di sekolah atau kuliah yang tampaknya membosankan, bisa menjadi bekal untuk karier atau kehidupan di masa depan. Disiplin dalam belajar hal-hal yang diperlukan mengajarkan ketekunan dan tanggung jawab.
+<br /><br />
+Dengan menggabungkan rasa penasaran, passion, dan kebutuhan, kamu bisa menciptakan pola belajar yang seimbang dan efektif. Setiap pendekatan ini punya perannya masing-masing, dan dengan menerapkannya, belajar akan menjadi perjalanan yang lebih bermakna.`,
     },
   },
   {
