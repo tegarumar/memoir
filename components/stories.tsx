@@ -5,6 +5,41 @@ import { ChevronRight, Globe } from "lucide-react";
 
 const stories = [
   {
+    id: 4,
+    title: {
+      en: "Would AI Replace Your Job?",
+      id: "Apakah AI Akan Menggantikan Pekerjaanmu?",
+    },
+    excerpt: {
+      en: "AI is a powerful technology that has been developing rapidly. Today, AI provides numerous benefits to humans, especially as a...",
+      id: "AI adalah teknologi yang sangat powerful dan berkembang dengan pesat. Saat ini, AI telah memberikan banyak manfaat bagi manusia, terutama sebagai...",
+    },
+    content: {
+      en: `AI is a powerful technology that has been developing rapidly. Today, AI provides numerous benefits to humans, especially as a "tool" to enhance productivity. One of the most common advantages of AI is its ability to serve as a reference, assist in decision-making, and improve efficiency in tasks such as summarizing documents, and so on. <br /><br />
+However, alongside these immense benefits, there is growing concern that AI might replace human jobs. In my opinion, AI indeed has significant potential to take over certain types of work, especially tasks that are precise, repetitive, or routine. Examples include data entry, assembly-line manufacturing, or document management. Moreover, AI can also replace jobs requiring basic analysis and standard interactions, such as Customer Service or Virtual Assistants.<br /><br />
+
+On the other hand, there are types of jobs that, in my view, will be challenging for AI to replace in the near future. These jobs often involve uncertain sciences, creativity, or serendipity, such as scientific research. Jobs requiring advanced technical skills and dynamic physical contexts—like tasks that engage the senses (touch, smell, hearing)—are also hard to substitute. Additionally, jobs that demand genuine empathy or emotional intelligence (EQ), such as teaching, psychology/therapy, and roles involving values, ethics, and complex subjective considerations, are likely to remain within the human domain.<br /><br />
+
+As a Software Engineer, I also share this concern. There’s a story about someone who worked remotely from Indonesia for an American company. His role was in IT Security, responsible for maintaining system security. Unfortunately, he was laid off—not due to poor performance or being replaced by another person—but because his position was taken over by AI.<br /><br />
+
+My hypothesis is that perhaps the cost of AI is more worthwhile than human labor. However, in Indonesia, AI might still be too expensive and not as intense as in America. Simply put, labor costs in Indonesia are cheaper than the cost of AI. Moreover, AI investment in Indonesia is still half-hearted. <br/>
+
+It could also be because the company is a business entity not based in Indonesia. On that note, if the contract is not clear enough, freelancing across countries carries significant legal protection risks, which might be why they were laid off.
+<br /><br />
+Suppose AI were to replace your job. What would you do? Lower your price as much as possible so the company chooses you instead of AI? Or transition to a field that AI cannot easily replace?
+<br /><br />
+If you were a product, what would you do? Fit the market? Or continue to pursue your passion, even if it’s more challenging?
+
+The world needs more listeners. Be one of them.`,
+      id: `AI adalah teknologi yang sangat powerful dan berkembang dengan pesat. Saat ini, AI telah memberikan banyak manfaat bagi manusia, terutama sebagai "tools" yang membantu meningkatkan produktivitas. Salah satu manfaat paling umum dari AI adalah memberikan referensi, membantu dalam pengambilan keputusan, serta meningkatkan efisiensi, seperti dalam hal menyusun ringkasan (summarize) sebuah dokumen, dan sebagainya.<br /><br />
+Dari banyaknya manfaat yang AI berikan, muncul keresahan bahwa teknologi ini dapat menggantikan pekerjaan manusia. Menurut saya, AI memang memiliki potensi besar untuk mengambil alih beberapa jenis pekerjaan, adapun jenis tugas atau pekerjaan yang potensial digantikan menurut saya seperti Ilmu pasti, pekerjaan yang berulang atau rutin misalnya seperti entri data, manufaktur berbasis assembly line, atau pengelolaan dokumen, lalu juga AI bisa menggantikan pekerjaan yang basisnya analisis sederhana, dan interaksi standard seperti Customer Service atau Virtual Assistant.<br /><br />
+Di sisi lain, ada pula jenis pekerjaan yang, menurut saya, sulit digantikan oleh AI dalam waktu dekat. Pekerjaan ini biasanya melibatkan ilmu yang tidak pasti, 
+kreativitas, atau serendipity, seperti penelitian ilmiah. Teknis tinggi dan konteks fisik yang dinamis misalnya pekerjaan yang harus melibatkan indera (meraba, mencium, mendegar), lalu juga empati yang tulus atau kecerdasan emosional EQ seperti guru, psikolog/terapis dan pekerjaan yang melibatkan nilai, etika & pertimbangan subjektif yang kompleks, kemungkinan besar akan tetap menjadi domain manusia.<br /><br /> Saya saat ini sebagai Software Engineer  juga merasakan keresahan yang sama, ada salah satu cerita dimana seseorang bekerja di perusahaan Amerika dan terkena layoff, kerjanya remote dari Indonesia, tentu gajinya cukup besar karena dibayar dalam bentuk USD. Pekerjaannya di bidang IT Security, yang bertugas menjaga keamanan sistem. Sayangnya, ia terkena layoff, bukan karena performanya buruk atau digantikan oleh orang lain, tetapi karena posisinya diambil alih oleh AI. <br /><br /> Hipotesis saya, mungkin karena costnya lebih worth it an AI daripada Manusia terlepas dari sementara itu di Indonesia mungkin AI masih terlalu mahal, dan belum se-intense di Amerika, kasarnya tenaga kerja di Indonesia lebih murah dari cost AI, toh juga di indonesia AI Investment masih setengah-setengah. <br />Atau mungkin juga karena perusahaan yang entitas bisnisnya bukan di Indonesia. On that notes, jika kontraknya tidak cukup jelas, freelancing beda negara cukup berisiko secara perlindungan hukum, makannya dari itu ia terkena layoff.<br /><br /> Anggaplah AI akan menggantikan pekerjaanmu. Apa yang akan kamu lakukan? Menurunkan harga jasamu serendah mungkin agar perusahaan tetap memilihmu dibanding AI? Atau, bertransisi ke jenis pekerjaan yang sulit digantikan oleh AI?
+
+<br /><br /> Jika kamu adalah sebuah produk, apa yang akan kamu lakukan? Menyesuaikan diri agar sesuai dengan kebutuhan pasar? Atau tetap mengikuti passion meskipun itu akan sulit?`,
+    },
+  },
+  {
     id: 1,
     title: {
       en: "Maximize Assets, Avoid Inflation",
@@ -117,41 +152,6 @@ Dengan menggabungkan rasa penasaran, passion, dan kebutuhan, kamu bisa menciptak
     content: {
       en: `Networking is one of the most crucial aspects of building a career. More than just exchanging names or connections on social media, networking is about creating meaningful relationships with people who can provide insights, opportunities, or even inspiration. In a competitive professional world, a strong network can open doors that might not be accessible through technical skills alone. Through networking, we can learn from others' experiences, gain information about industry trends, or even find mentors who help us reach our maximum potential in our chosen field. Therefore, investing time and energy in building and maintaining professional relationships not only enhances career opportunities but also enriches our knowledge. Networking is truly a form of long-term investment.`,
       id: `Networking adalah salah satu aspek krusial dalam membangun sebuah karir. Lebih dari sekadar bertukar nama atau koneksi di media sosial, networking adalah tentang menciptakan hubungan bermakna dengan orang-orang yang dapat memberikan wawasan, peluang, atau bahkan inspirasi. Dalam dunia kerja yang kompetitif, jaringan yang baik dapat membuka pintu yang mungkin tidak bisa diakses hanya dengan keterampilan teknis. Melalui networking, kita dapat belajar dari pengalaman orang lain, mendapatkan informasi tentang tren industri, atau bahkan menemukan mentor yang membantu kita mencapai potensi maksimal dibidang yang sedang kita geluti. Oleh karena itu, investasi waktu dan energi untuk membangun serta menjaga hubungan profesional tidak hanya meningkatkan peluang karir, tetapi juga memperkaya ilmu. Networking adalah salah satu bentuk investasi jangka panjang.`,
-    },
-  },
-  {
-    id: 4,
-    title: {
-      en: "Would AI Replace Your Job?",
-      id: "Apakah AI Akan Menggantikan Pekerjaanmu?",
-    },
-    excerpt: {
-      en: "AI is a powerful technology that has been developing rapidly. Today, AI provides numerous benefits to humans, especially as a...",
-      id: "AI adalah teknologi yang sangat powerful dan berkembang dengan pesat. Saat ini, AI telah memberikan banyak manfaat bagi manusia, terutama sebagai...",
-    },
-    content: {
-      en: `AI is a powerful technology that has been developing rapidly. Today, AI provides numerous benefits to humans, especially as a "tool" to enhance productivity. One of the most common advantages of AI is its ability to serve as a reference, assist in decision-making, and improve efficiency in tasks such as summarizing documents, and so on. <br /><br />
-However, alongside these immense benefits, there is growing concern that AI might replace human jobs. In my opinion, AI indeed has significant potential to take over certain types of work, especially tasks that are precise, repetitive, or routine. Examples include data entry, assembly-line manufacturing, or document management. Moreover, AI can also replace jobs requiring basic analysis and standard interactions, such as Customer Service or Virtual Assistants.<br /><br />
-
-On the other hand, there are types of jobs that, in my view, will be challenging for AI to replace in the near future. These jobs often involve uncertain sciences, creativity, or serendipity, such as scientific research. Jobs requiring advanced technical skills and dynamic physical contexts—like tasks that engage the senses (touch, smell, hearing)—are also hard to substitute. Additionally, jobs that demand genuine empathy or emotional intelligence (EQ), such as teaching, psychology/therapy, and roles involving values, ethics, and complex subjective considerations, are likely to remain within the human domain.<br /><br />
-
-As a Software Engineer, I also share this concern. There’s a story about someone who worked remotely from Indonesia for an American company. His role was in IT Security, responsible for maintaining system security. Unfortunately, he was laid off—not due to poor performance or being replaced by another person—but because his position was taken over by AI.<br /><br />
-
-My hypothesis is that perhaps the cost of AI is more worthwhile than human labor. However, in Indonesia, AI might still be too expensive and not as intense as in America. Simply put, labor costs in Indonesia are cheaper than the cost of AI. Moreover, AI investment in Indonesia is still half-hearted. <br/>
-
-It could also be because the company is a business entity not based in Indonesia. On that note, if the contract is not clear enough, freelancing across countries carries significant legal protection risks, which might be why they were laid off.
-<br /><br />
-Suppose AI were to replace your job. What would you do? Lower your price as much as possible so the company chooses you instead of AI? Or transition to a field that AI cannot easily replace?
-<br /><br />
-If you were a product, what would you do? Fit the market? Or continue to pursue your passion, even if it’s more challenging?
-
-The world needs more listeners. Be one of them.`,
-      id: `AI adalah teknologi yang sangat powerful dan berkembang dengan pesat. Saat ini, AI telah memberikan banyak manfaat bagi manusia, terutama sebagai "tools" yang membantu meningkatkan produktivitas. Salah satu manfaat paling umum dari AI adalah memberikan referensi, membantu dalam pengambilan keputusan, serta meningkatkan efisiensi, seperti dalam hal menyusun ringkasan (summarize) sebuah dokumen, dan sebagainya.<br /><br />
-Dari banyaknya manfaat yang AI berikan, muncul keresahan bahwa teknologi ini dapat menggantikan pekerjaan manusia. Menurut saya, AI memang memiliki potensi besar untuk mengambil alih beberapa jenis pekerjaan, adapun jenis tugas atau pekerjaan yang potensial digantikan menurut saya seperti Ilmu pasti, pekerjaan yang berulang atau rutin misalnya seperti entri data, manufaktur berbasis assembly line, atau pengelolaan dokumen, lalu juga AI bisa menggantikan pekerjaan yang basisnya analisis sederhana, dan interaksi standard seperti Customer Service atau Virtual Assistant.<br /><br />
-Di sisi lain, ada pula jenis pekerjaan yang, menurut saya, sulit digantikan oleh AI dalam waktu dekat. Pekerjaan ini biasanya melibatkan ilmu yang tidak pasti, 
-kreativitas, atau serendipity, seperti penelitian ilmiah. Teknis tinggi dan konteks fisik yang dinamis misalnya pekerjaan yang harus melibatkan indera (meraba, mencium, mendegar), lalu juga empati yang tulus atau kecerdasan emosional EQ seperti guru, psikolog/terapis dan pekerjaan yang melibatkan nilai, etika & pertimbangan subjektif yang kompleks, kemungkinan besar akan tetap menjadi domain manusia.<br /><br /> Saya saat ini sebagai Software Engineer  juga merasakan keresahan yang sama, ada salah satu cerita dimana seseorang bekerja di perusahaan Amerika dan terkena layoff, kerjanya remote dari Indonesia, tentu gajinya cukup besar karena dibayar dalam bentuk USD. Pekerjaannya di bidang IT Security, yang bertugas menjaga keamanan sistem. Sayangnya, ia terkena layoff, bukan karena performanya buruk atau digantikan oleh orang lain, tetapi karena posisinya diambil alih oleh AI. <br /><br /> Hipotesis saya, mungkin karena costnya lebih worth it an AI daripada Manusia terlepas dari sementara itu di Indonesia mungkin AI masih terlalu mahal, dan belum se-intense di Amerika, kasarnya tenaga kerja di Indonesia lebih murah dari cost AI, toh juga di indonesia AI Investment masih setengah-setengah. <br />Atau mungkin juga karena perusahaan yang entitas bisnisnya bukan di Indonesia. On that notes, jika kontraknya tidak cukup jelas, freelancing beda negara cukup berisiko secara perlindungan hukum, makannya dari itu ia terkena layoff.<br /><br /> Anggaplah AI akan menggantikan pekerjaanmu. Apa yang akan kamu lakukan? Menurunkan harga jasamu serendah mungkin agar perusahaan tetap memilihmu dibanding AI? Atau, bertransisi ke jenis pekerjaan yang sulit digantikan oleh AI?
-
-<br /><br /> Jika kamu adalah sebuah produk, apa yang akan kamu lakukan? Menyesuaikan diri agar sesuai dengan kebutuhan pasar? Atau tetap mengikuti passion meskipun itu akan sulit?`,
     },
   },
   {
