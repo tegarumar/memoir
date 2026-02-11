@@ -169,30 +169,6 @@ Dengan menggabungkan rasa penasaran, passion, dan kebutuhan, kamu bisa menciptak
       id: `Networking adalah salah satu aspek krusial dalam membangun sebuah karir. Lebih dari sekadar bertukar nama atau koneksi di media sosial, networking adalah tentang menciptakan hubungan bermakna dengan orang-orang yang dapat memberikan wawasan, peluang, atau bahkan inspirasi. Dalam dunia kerja yang kompetitif, jaringan yang baik dapat membuka pintu yang mungkin tidak bisa diakses hanya dengan keterampilan teknis. Melalui networking, kita dapat belajar dari pengalaman orang lain, mendapatkan informasi tentang tren industri, atau bahkan menemukan mentor yang membantu kita mencapai potensi maksimal dibidang yang sedang kita geluti. Oleh karena itu, investasi waktu dan energi untuk membangun serta menjaga hubungan profesional tidak hanya meningkatkan peluang karir, tetapi juga memperkaya ilmu. Networking adalah salah satu bentuk investasi jangka panjang.`,
     },
   },
-  {
-    id: 5,
-    title: {
-      en: "Love's make everything possible",
-      id: "Cinta membuat segalanya menjadi mungkin",
-    },
-    excerpt: {
-      en: "Love is like passive fuel, yet it holds an extraordinary power to make anything possible...",
-      id: "Cinta itu seperti bahan bakar pasif, namun memiliki kekuatan luar biasa untuk membuat segala hal menjadi mungkin...",
-    },
-    content: {
-      en: `Love is like passive fuel, yet it holds an extraordinary power to make anything possible. It’s not just about romantic relationships, but also about loving the passion behind what we do. When we work, learn, or pursue something wholeheartedly, love flows into the results. Every task feels lighter, every obstacle becomes a lesson, and every achievement feels more meaningful. Love for the work or activities we do, when rooted in sincerity, will undoubtedly bear sweet fruit in the end. <br/><br/>
-
-However, love in the context of relationships is no less impactful. I once observed a friend of mine who was in love. Their face seemed brighter, filled with happiness. The burdens of life appeared to lift away, leaving them more at peace—even their quality of sleep improved. It made me reflect on how profoundly love can influence our daily lives. <br/><br/>
-Love is simple yet magical. It transforms pressure into motivation, sadness into strength, and routines into stories full of meaning. When love is present—whether in work or relationships—we become the best version of ourselves, ready to face the world with greater joy and hope. Even though the path isn’t always smooth, love teaches us that the journey itself is part of the magic.<br/><br/>
-
-`,
-      id: `Cinta itu seperti bahan bakar pasif, namun memiliki kekuatan luar biasa untuk membuat segala hal menjadi mungkin. Bukan hanya tentang hubungan romantis, tetapi juga mencintai passion yang kita lakukan. Ketika bekerja, belajar, atau menjalani sesuatu dengan sepenuh hati, cinta tersebut mengalir ke dalam hasilnya. Setiap tugas terasa lebih ringan, setiap hambatan menjadi pelajaran, dan setiap pencapaian terasa lebih bermakna. Cinta pada pekerjaan atau kegiatan yang kita lakukan, jika dilandasi ketulusan, pasti akan berbuah manis pada akhirnya. <br/><br/>
-
-    Namun, cinta dalam artian hubungan juga tak kalah berpengaruh. Saya pernah melihat teman saya yang sedang jatuh cinta. Wajahnya terlihat lebih cerah, penuh dengan kebahagiaan. Beban hidupnya seakan terangkat, dan ia menjadi lebih damai, bahkan kualitas tidurnya menjadi lebih baik. Hal itu membuat saya berpikir, betapa besar dampak cinta terhadap keseharian kita. <br/><br/>
-    Cinta itu sederhana namun ajaib. Ia mengubah tekanan menjadi dorongan, kesedihan menjadi kekuatan, dan rutinitas menjadi cerita penuh makna. Ketika cinta hadir, baik dalam pekerjaan maupun hubungan, kita menjadi versi terbaik dari diri kita sendiri, siap menghadapi dunia dengan lebih ceria dan penuh harapan. Meski jalannya tak selalu mulus, cinta mengajarkan kita bahwa perjalanan itu sendiri adalah bagian dari keajaiban. <br/><br/>
-    `,
-    },
-  },
 ];
 
 export default function Stories() {
@@ -237,8 +213,8 @@ export default function Stories() {
                     >
                       <span
                         className={`transition-opacity ${currentLang === "en"
-                            ? "opacity-100 font-medium"
-                            : "opacity-60"
+                          ? "opacity-100 font-medium"
+                          : "opacity-60"
                           }`}
                       >
                         EN
@@ -246,15 +222,15 @@ export default function Stories() {
                       <div className="w-8 h-4 bg-border dark:bg-black rounded-full relative">
                         <div
                           className={`absolute top-0.5 w-3 h-3 bg-foreground rounded-full transition-transform duration-200 ${currentLang === "id"
-                              ? "translate-x-4"
-                              : "translate-x-0.5"
+                            ? "translate-x-4"
+                            : "translate-x-0.5"
                             }`}
                         />
                       </div>
                       <span
                         className={`transition-opacity ${currentLang === "id"
-                            ? "opacity-100 font-medium"
-                            : "opacity-60"
+                          ? "opacity-100 font-medium"
+                          : "opacity-60"
                           }`}
                       >
                         ID
@@ -294,8 +270,8 @@ export default function Stories() {
                   </span>
                   <ChevronRight
                     className={`ml-1 h-4 w-4 transition-transform duration-200 ${expandedStory === story.id
-                        ? "rotate-90"
-                        : "group-hover:translate-x-1"
+                      ? "rotate-90"
+                      : "group-hover:translate-x-1"
                       }`}
                   />
                 </button>
