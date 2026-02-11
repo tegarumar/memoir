@@ -184,22 +184,13 @@ Dengan menggabungkan rasa penasaran, passion, dan kebutuhan, kamu bisa menciptak
 
 However, love in the context of relationships is no less impactful. I once observed a friend of mine who was in love. Their face seemed brighter, filled with happiness. The burdens of life appeared to lift away, leaving them more at peace—even their quality of sleep improved. It made me reflect on how profoundly love can influence our daily lives. <br/><br/>
 Love is simple yet magical. It transforms pressure into motivation, sadness into strength, and routines into stories full of meaning. When love is present—whether in work or relationships—we become the best version of ourselves, ready to face the world with greater joy and hope. Even though the path isn’t always smooth, love teaches us that the journey itself is part of the magic.<br/><br/>
-When it comes to relationships, don’t be like me—someone who failed because of their own mistakes. I spent more than half a decade mourning the loss, replaying every moment, and wondering what I could have done to make things right. In that emptiness, I realized that love is not just about feeling—it’s about learning to take responsibility, to understand, and to strive. I hope to have a chance to fix everything. No matter how long it takes, I'll wait.
-<br/><br/>
-Yet, to this day, there is one question that keeps lingering in my mind—a question I desperately want to ask her. And I need the answer.
-<br/>
-<strong>Do I still have a chance?</strong><br/><br/>
 
 `,
       id: `Cinta itu seperti bahan bakar pasif, namun memiliki kekuatan luar biasa untuk membuat segala hal menjadi mungkin. Bukan hanya tentang hubungan romantis, tetapi juga mencintai passion yang kita lakukan. Ketika bekerja, belajar, atau menjalani sesuatu dengan sepenuh hati, cinta tersebut mengalir ke dalam hasilnya. Setiap tugas terasa lebih ringan, setiap hambatan menjadi pelajaran, dan setiap pencapaian terasa lebih bermakna. Cinta pada pekerjaan atau kegiatan yang kita lakukan, jika dilandasi ketulusan, pasti akan berbuah manis pada akhirnya. <br/><br/>
 
     Namun, cinta dalam artian hubungan juga tak kalah berpengaruh. Saya pernah melihat teman saya yang sedang jatuh cinta. Wajahnya terlihat lebih cerah, penuh dengan kebahagiaan. Beban hidupnya seakan terangkat, dan ia menjadi lebih damai, bahkan kualitas tidurnya menjadi lebih baik. Hal itu membuat saya berpikir, betapa besar dampak cinta terhadap keseharian kita. <br/><br/>
     Cinta itu sederhana namun ajaib. Ia mengubah tekanan menjadi dorongan, kesedihan menjadi kekuatan, dan rutinitas menjadi cerita penuh makna. Ketika cinta hadir, baik dalam pekerjaan maupun hubungan, kita menjadi versi terbaik dari diri kita sendiri, siap menghadapi dunia dengan lebih ceria dan penuh harapan. Meski jalannya tak selalu mulus, cinta mengajarkan kita bahwa perjalanan itu sendiri adalah bagian dari keajaiban. <br/><br/>
-    Dalam sebuah hubungan, don’t be like me—someone who failed because of their own mistakes. Lebih dari setengah dekade kuhabiskan untuk meratapi kehilangan, memutar ulang setiap momen, dan bertanya-tanya apa yang bisa kulakukan agar bisa membuat semuanya kembali seperti semula. Dalam kekosongan itu, aku menyadari bahwa cinta bukan hanya tentang merasakan, tetapi juga tentang belajar bertanggung jawab, memahami, dan berusaha. Aku berharap memiliki kesempatan untuk memperbaiki semuanya. Selama apa pun waktu yang dibutuhkan, akan kutunggu.<br/><br/>
-
-Namun, hingga saat ini, ada satu pertanyaan yang terus membayangi pikiranku—pertanyaan yang ingin sekali kutanyakan padanya. Dan aku butuh jawaban itu.
-<br/>
-<strong>Apakah aku masih memiliki kesempatan?</strong>`,
+    `,
     },
   },
 ];
@@ -245,29 +236,26 @@ export default function Stories() {
                       className="flex items-center gap-2 px-3 py-1 rounded-full bg-muted hover:bg-muted/80 transition-colors duration-200 text-sm"
                     >
                       <span
-                        className={`transition-opacity ${
-                          currentLang === "en"
+                        className={`transition-opacity ${currentLang === "en"
                             ? "opacity-100 font-medium"
                             : "opacity-60"
-                        }`}
+                          }`}
                       >
                         EN
                       </span>
                       <div className="w-8 h-4 bg-border dark:bg-black rounded-full relative">
                         <div
-                          className={`absolute top-0.5 w-3 h-3 bg-foreground rounded-full transition-transform duration-200 ${
-                            currentLang === "id"
+                          className={`absolute top-0.5 w-3 h-3 bg-foreground rounded-full transition-transform duration-200 ${currentLang === "id"
                               ? "translate-x-4"
                               : "translate-x-0.5"
-                          }`}
+                            }`}
                         />
                       </div>
                       <span
-                        className={`transition-opacity ${
-                          currentLang === "id"
+                        className={`transition-opacity ${currentLang === "id"
                             ? "opacity-100 font-medium"
                             : "opacity-60"
-                        }`}
+                          }`}
                       >
                         ID
                       </span>
@@ -301,15 +289,14 @@ export default function Stories() {
                         ? "Show Less"
                         : "Tampilkan Lebih Sedikit"
                       : currentLang === "en"
-                      ? "Read More"
-                      : "Baca Selengkapnya"}
+                        ? "Read More"
+                        : "Baca Selengkapnya"}
                   </span>
                   <ChevronRight
-                    className={`ml-1 h-4 w-4 transition-transform duration-200 ${
-                      expandedStory === story.id
+                    className={`ml-1 h-4 w-4 transition-transform duration-200 ${expandedStory === story.id
                         ? "rotate-90"
                         : "group-hover:translate-x-1"
-                    }`}
+                      }`}
                   />
                 </button>
               </article>
